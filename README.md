@@ -1,18 +1,16 @@
 # Anjia0532 Tap
 
-## How do I install these formulae?
+## 安装应用
+
+### 二进制
 
 `brew install anjia0532/tap/<formula>`
 
-Or `brew tap anjia0532/tap` and then `brew install <formula>`.
 
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
+### GUI
 
-```ruby
-tap "anjia0532/tap"
-brew "<formula>"
-```
+`brew install --cask anjia0532/tap/<cask>`
 
-## Documentation
+## 创建新包
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew create --cask --set-name navicat-premium-cn --set-version 17.1.3 --tap anjia0532/homebrew-tap https://dn.navicat.com.cn/download/navicat17_premium_cs.dmg`

@@ -72,6 +72,8 @@ class G < Formula
 
         $ echo 'source ~/.g/env' >> ~/.bashrc
         $ echo 'source ~/.g/env' >> ~/.zshrc
+
+        $ g self update # g 自身升级
       EOS
     end
   
