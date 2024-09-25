@@ -14,3 +14,6 @@
 ## 创建新包
 
 `brew create --cask --set-name navicat-premium-cn --set-version 17.1.3 --tap anjia0532/homebrew-tap https://dn.navicat.com.cn/download/navicat17_premium_cs.dmg`
+
+`brew create --cask --set-name pixpin --set-version 1.8.22.0 --tap anjia0532/homebrew-tap https://download.pixpinapp.com/PixPin_1.8.22.0.dmg`
+
