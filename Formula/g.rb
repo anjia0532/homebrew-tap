@@ -62,10 +62,16 @@ class G < Formula
         $ echo "unalias g" >> ~/.bashrc # 可选。若其他程序（如'git'）使用了'g'作为别名。
         $ source ~/.bashrc # 或者 source ~/.zshrc
   
-        $ ~/.bashrc
-        # export GOROOT="${HOME}/.g/go"
-        # export PATH="${HOME}/.g/go/bin:$PATH"
-        # export G_MIRROR=https://golang.google.cn/dl/
+        $ cat >~/.g/env <<'EOF'
+        #!/bin/sh
+        # g shell setup
+        export GOROOT="${HOME}/.g/go"
+        export PATH="${HOME}/.g/bin:${GOROOT}/bin:$PATH"
+        export G_MIRROR=https://golang.google.cn/dl/
+        EOF
+
+        $ echo 'source ~/.g/env' >> ~/.bashrc
+        $ echo 'source ~/.g/env' >> ~/.zshrc
       EOS
     end
   
