@@ -78,6 +78,7 @@ class G < Formula
     end
   
     test do
+      ENV["G_MIRROR"] = "https://golang.google.cn/dl/"
       system bin/"g", "ls-remote"
     end
   end
