@@ -16,6 +16,7 @@ brew install anjia0532/tap/g
 ```bash
 brew install --cask anjia0532/tap/navicat-premium-cn
 brew install --cask anjia0532/tap/pixpin
+brew install --cask anjia0532/tap/sogouinput
 ```
 
 ## 创建新包
@@ -29,6 +30,9 @@ brew create --cask --set-name navicat-premium-cn --set-version 17.1.3 --tap anji
 
 # pixpin
 brew create --cask --set-name pixpin --set-version 1.8.22.0 --tap anjia0532/homebrew-tap https://download.pixpinapp.com/PixPin_1.8.22.0.dmg
+
+# sogouinput
+brew create --cask --set-name sogouinput --set-version 615b --tap anjia0532/homebrew-tap http://ime.gtimg.com/pc/sogou_mac_guanwang_615b.zip
 ```
 
 
