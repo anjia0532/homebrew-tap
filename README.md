@@ -9,6 +9,9 @@
 # voidint/g
 brew install anjia0532/tap/g
 
+# apache-maven
+brew install anjia0532/tap/maven
+
 ```
 
 ### GUI
@@ -17,6 +20,7 @@ brew install anjia0532/tap/g
 brew install --cask anjia0532/tap/navicat-premium-cn
 brew install --cask anjia0532/tap/pixpin
 brew install --cask anjia0532/tap/sogouinput
+brew install --cask anjia0532/tap/synergy
 ```
 
 ## 创建新包
@@ -33,6 +37,9 @@ brew create --cask --set-name pixpin --set-version 1.8.22.0 --tap anjia0532/home
 
 # sogouinput
 brew create --cask --set-name sogouinput --set-version 615b --tap anjia0532/homebrew-tap http://ime.gtimg.com/pc/sogou_mac_guanwang_615b.zip
+
+# synergy
+brew create --cask --set-name synergy --set-version 3.0.80.1-rc3 --tap anjia0532/homebrew-tap https://symless.com/synergy/download/package/mac/synergy-macOS_arm64-v3.0.80.1-rc3.dmg
 ```
 
 
