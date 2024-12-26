@@ -41,6 +41,7 @@ brew create --cask --set-name sogouinput --set-version 616a --tap anjia0532/home
 brew create --cask --set-name synergy --set-version 3.2.1 --tap anjia0532/homebrew-tap https://symless.com/synergy/synergy/api/download/synergy-3.2.1-macos-arm64.dmg
 ```
 
-
-git config --global http.https://github.com.proxy http://proxy.example.com:8080
-
+通过 url 计算checksum
+```bash
+curl -sL https://download.pixpinapp.com/PixPin_1.9.5.0.dmg | sha256sum
+```
