@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 cask "synergy" do
   version "3.2.1"
-  sha256 "bb68a0c9e427b31abc111d1c77e267afa240816a800600f6c361c1197d64a331"
+  sha256 "e1dd69fb158235c42b4cd39c41351d3107bd8d918bb80ecd4d4214b4671102bd"
 
   url "https://symless.com/synergy/synergy/api/download/synergy-#{version}-macos-arm64.dmg",
       referer: "https://symless.com/synergy/download/package/mac/synergy-#{version}-macos-arm64.dmg"
