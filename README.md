@@ -40,6 +40,7 @@ brew create --cask --set-name sogouinput --set-version 615b --tap anjia0532/home
 
 # synergy
 brew create --cask --set-name synergy --set-version 3.0.80.1-rc3 --tap anjia0532/homebrew-tap https://symless.com/synergy/download/package/mac/synergy-macOS_arm64-v3.0.80.1-rc3.dmg
+https://symless.com/synergy/synergy/api/download/synergy-3.2.1-macos-arm64.dmg
 ```
 
 
