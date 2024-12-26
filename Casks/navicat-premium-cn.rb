@@ -8,7 +8,7 @@ cask "navicat-premium-cn" do
   homepage "https://www.navicat.com.cn/products/navicat-premium"
 
   livecheck do
-    url "https://updater.navicat.com.cn/mac/v#{version.major}/navicat_updates.php?appName=Navicat%20Premium"
+    url "https://updater.navicat.com/mac/v#{version.major}/navicat_updates.php?appName=Navicat%20Premium"
     strategy :sparkle, &:short_version
   end
 
