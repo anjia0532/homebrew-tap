@@ -16,7 +16,7 @@ cask "synergy" do
   # href="/synergy/download/package/mac/synergy-macOS_arm64-v3.0.80.1-rc3.dmg">
   livecheck do
     url :homepage
-    regex(%r{href=/.*/synergy-.*-macos-arm64\.dmg}i)
+    regex(/href=.*?synergy[._-]v?(\d+(?:\.\d+)+)-macos-arm64\.dmg/i)
     strategy :page_match
   end
 
