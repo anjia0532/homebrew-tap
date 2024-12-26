@@ -11,7 +11,6 @@ brew install anjia0532/tap/g
 
 # apache-maven
 brew install anjia0532/tap/maven
-
 ```
 
 ### GUI
@@ -30,17 +29,18 @@ brew install --cask anjia0532/tap/synergy
 brew create --set-name g --set-version 1.7.0 --tap anjia0532/homebrew-tap https://github.com/voidint/g/releases/download/v1.7.0/g1.7.0.darwin-arm64.tar.gz
 
 # navicat-premium-cn
-brew create --cask --set-name navicat-premium-cn --set-version 17.1.3 --tap anjia0532/homebrew-tap https://dn.navicat.com.cn/download/navicat17_premium_cs.dmg
+brew create --cask --set-name navicat-premium-cn --set-version 17.1.8 --tap anjia0532/homebrew-tap https://dn.navicat.com.cn/download/navicat17_premium_cs.dmg
 
 # pixpin
-brew create --cask --set-name pixpin --set-version 1.8.22.0 --tap anjia0532/homebrew-tap https://download.pixpinapp.com/PixPin_1.8.22.0.dmg
+brew create --cask --set-name pixpin --set-version 1.9.5.0 --tap anjia0532/homebrew-tap https://download.pixpinapp.com/PixPin_1.9.5.0.dmg
 
 # sogouinput
-brew create --cask --set-name sogouinput --set-version 615b --tap anjia0532/homebrew-tap http://ime.gtimg.com/pc/sogou_mac_guanwang_615b.zip
+brew create --cask --set-name sogouinput --set-version 616a --tap anjia0532/homebrew-tap http://ime.gtimg.com/pc/sogou_mac_guanwang_616a.zip
 
 # synergy
-brew create --cask --set-name synergy --set-version 3.0.80.1-rc3 --tap anjia0532/homebrew-tap https://symless.com/synergy/download/package/mac/synergy-macOS_arm64-v3.0.80.1-rc3.dmg
-https://symless.com/synergy/synergy/api/download/synergy-3.2.1-macos-arm64.dmg
+brew create --cask --set-name synergy --set-version 3.2.1 --tap anjia0532/homebrew-tap https://symless.com/synergy/synergy/api/download/synergy-3.2.1-macos-arm64.dmg
 ```
 
+
+git config --global http.https://github.com.proxy http://proxy.example.com:8080
 

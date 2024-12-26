@@ -1,6 +1,6 @@
 cask 'sogouinput' do
-  
-    version "615b"
+
+    version "616a"
     sha256 :no_check
     url "http://ime.gtimg.com/pc/sogou_mac_guanwang_#{version}.zip"
 
@@ -11,24 +11,19 @@ cask 'sogouinput' do
 
     livecheck do
       url :homepage
-      strategy :page_match do |page|
-        match = page.match(%r{https:\/\/ime-sec\.gtimg.com\/\d+\/\w+\/pc\/dl\/gzindex\/\d+\/sogou_mac_(\w+)\.zip}i)
-        next if match.blank?
-  
-        "#{match[4]},#{match[3]},#{match[2]},#{match[1]}"
-      end
+      regex(/href=.*?sogou_mac_(\d+(?:\.\d+)*[a-z]*)\.zip/i)
     end
-  
+
     auto_updates true
-  
+
     installer manual: "sogou_mac_#{version.csv.first}.app"
-  
+
     uninstall delete: [
                 '/Library/Input Methods/SogouInput.app',
                 '/Library/QuickLook/SogouSkinFileQuickLook.qlgenerator',
               ],
               launchctl: 'com.sogou.SogouServices'
-  
+
     zap trash: [
           '~/.sogouinput',
           '~/Library/Application Support/Sogou/EmojiPanel',
